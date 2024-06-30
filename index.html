@@ -1,444 +1,868 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Devansh</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#projects">Blogs</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Devansh</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Blogs</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Devansh Upadhyay</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/DevanshUpadhyayResume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
+    <head>
+        <meta charset="UTF-8">
+        <title>Devansh Upadhyay</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="preload" as="image" href="/assets/header.png">
+        <link rel="icon" type="image/x-icon" href="assets/icon.png">
+        <link rel="stylesheet" href="/css/style.css"/>
+        <script type="module" src="/js/old.js"></script>
+        <script src="/js/main.js"></script>
+        <!-- <link rel="icon" href="assets\header.png"> -->
+    </head>
+    <body>
+        <header top>
+            <section main>
+                <div class="container" header>
+                    <div class="info" header>
+                        <h1 header>Devansh Upadhyay</h1>
+                        <h2 header>Aspiring SDE <br />GenAI and MLOps Enthusiast </h2>
+                        <span header>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                            Navi Mumbai, Maharashtra, India   
+                        </span>
 
-          <a href="https://www.linkedin.com/in/devansh-upadhyay/"><img src="./assets/linkedin.png" alt="linkedin profile" class="icon" ></a>
-          <a href="https://github.com/DevanshUpadhyay26"><img src="./assets/github.png" alt="Github profile" class="icon" ></a>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>5 Months <br />Full Stack Intern @ Red Fibre</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BTech, Computer Science and Business System <br />Diploma in Engineering, Computer Science</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am a highly motivated individual with a passion for technology and a strong background in Computer Science. Currently pursuing a Bachelor of Technology (BTech) in Computer Science and Business Systems at Bharati Vidyapeeth University, 
-              I have consistently achieved outstanding results, maintaining a CGPA of 9.34 in my third year.
-              Prior to my degree, I completed a Diploma in Computer Technology with a remarkable percentage of 88.74%.
-              I possess a strong inclination towards continuous learning, collaboration, and driving progress. Let's connect and explore how we can leverage technology and foster innovation together.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
+                        <span header>
+                            <a href="javascript:void(0);" onclick="showSection('resume')" alt>Resume</a> | 
+                            <a href="javascript:void(0);" onclick="showSection('cover-letter')" alt>Cover-Letter</a> 
+                            <!-- <a href="javascript:void(0);" onclick="showSection('transcripts')" alt>Results</a> -->
+                        </span>
+
+                        <footer class="print" header>devanshupadhyay26@gmail.com • +91 9892113856 • https://linkedin.com/in/devansh-upadhyay/ </footer>
+                        <footer class="no-print" header>
+                            <a href="mailto:devanshupadhyay26@gmail.com" title="Email Devansh" target="_blank" rel="noopener noreferrer" header>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail size-4">
+                                    <title>Mail Icon</title>
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </a>
+                            <a href="tel:+919892113856" title="Call Devansh" target="_blank" rel="noopener noreferrer" header>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <title>Phone Icon</title>
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/devansh-upadhyay" title="Visit Devansh Upadhyay on LinkedIn" target="_blank" rel="noopener noreferrer" header>
+                                <svg height="16" width="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>LinkedIn</title>
+                                    <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/DevanshUpadhyay26" title="GitHub" target="_blank" rel="noopener noreferrer" header>
+                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub</title>
+                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                </svg>
+                            </a>
+
+                        </footer>
+                    </div>
+                    <figure header>
+                        <img src="/assets/header.png" alt="Devansh Upadhyay" importance="high" header>
+                    </figure>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScirpt</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Web Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>FLask and <br/>Django</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
+        </header top>
+        <main>
+            <nav>
+                <a href="/about" onclick="showSection('about'); event.preventDefault();">About</a>
+                <a href="">Bookshelf</a>
+                <a href="">Extracurricular Activities</a>
+                <!-- <a href="/bookshelf" onclick="showSection('bookshelf'); event.preventDefault()";>Bookshelf</a>
+                 <a href="/blog" onclick="showSection('blog'); event.preventDefault();">Blog</a> -->
+                <!-- <a href="/categories" onclick="showSection('categories'); event.preventDefault();">Categories</a> --> 
+            </nav>
+
+            <div id="content">
+                <section id="about" style="display:block;">
+                    <section main>
+                        <h2 main>About Me</h2>
+                        <p> As a Aspiring Software Developer, I am deeply committed to using technology to solve complex problems. My academic and recreational projects are where I try to apply my knowledge. I spend all of my time learning, researching, reading books, and exercising (mainly gym and cricket). </p>
+                    </section>
+                    <section main>
+                        <h2 main>Work Experience</h2>
+                        <ul work>
+                            <li work>
+                                <article work>
+                                    <header work>
+                                        <div work>
+                                            <h3 work>SRFusion Tech</h3>
+                                            <h4 work>Software Developer Engineer Intern</h4>
+                                        </div>
+                                        <div work>
+                                            <time datetime="2024-01-01" data-title="2024-01-01" work>Feb 2024 </time>
+                                            - <time work>Apr 2024 </time>
+                                        </div>
+                                    </header>
+                                    <footer work>
+                                        <p work>Leveraged Django REST framework to work with authorization and authentication and API testing with Postman.</p>
+                                        <p work>Worked on technologies like Python, Django REST, RestAPI, HTTP, Social Authentications, Postman</p>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li work>
+                                <article work>
+                                    <header work>
+                                        <div work>
+                                            <h3 work>Red Fibre</h3>
+                                            <h4 work>Full Stack Engineer Intern</h4>
+                                        </div>
+                                        <div work>
+                                            <time datetime="2023-03-01" data-title="2023-03-01" work>Apr 2023 </time>
+                                            - <time datetime="2024-01-01" data-title="2024-01-01" work>Aug 2023 </time>
+                                        </div>
+                                    </header>
+                                    <footer work>
+                                        <p work>Took a leading role in developing a Django-Based Web App for Lab Inventory bookings, resulting in 30% faster reservation processing and optimization of resource allocation.</p>
+                                        <p work>Worked on technologies like Python, Flask, Django, javascript, HTML/CSS, Chrome Browser Extension</p>
+
+                                    </footer>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    <section main>
+                        <h2 main>Education</h2>
+                        <ul education>
+                            <li education>
+                                <article education>
+                                    <header education>
+                                        <div education>
+                                            <h3 education>Bharati Vidyapeeth Deemed to be University, <br />Department of Engineering and Technology, Off Campus, <br />Navi Mumbai</h3>
+                                        </div>
+                                        <time education>2021 - 2024</time>
+                                    </header>
+                                    <footer education>
+                                        <p education> B.Tech in Computer Science and Business Systems, focusing on core computer science and their applications in real world, specifically in business.</p>
+                                    </footer>
+                                </article>
+                                <br />
+                                <article education>
+                                    <header education>
+                                        <div education>
+                                            <h3 education>Bharati Vidyapeeth Insitute of Technology, <br />Navi Mumbai</h3>
+                                        </div>
+                                        <time education>2018 - 2021</time>
+                                    </header>
+                                    <footer education>
+                                        <p education> Diploma in Computer Technology, focusing on basics of computer science and hardware.</p>
+                                    </footer>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    <section main>
+                        <h2 proj>Work / Group Projects</h2>
+                        <p click>(Click GitHub Logo for Source Code)</p>
+                        <ul project>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3  project>
+                                            <a href="https://github.com/DevanshUpadhyay26/Early-MI-using-Generative-AI" target="_blank" title="none" proj>Early Heart Attack Prediction Using Transformer</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/Early-MI-using-Generative-AI" target="_blank" title="git" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>Our team created an innovative system to predict heart attack risks early using a blend of traditional machine learning models and advanced transformers. </p>
+                                    </header>
+                                    <footer project>
+                                        <li projSkills>
+                                            <img src="/assets/deep.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>AI & Deep Learning</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Django</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/Shobhan0304/DDoS_attack_prediction_CNN" target="_blank" proj>DDoS attack prediction using CNN and Crow Search Optimizer </a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/Shobhan0304/DDoS_attack_prediction_CNN" target="_blank" title="View GitHub Link" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>A web-based application for predicting & detecting DDos attack over the network. It uses metaheuristic method called Crow Search Optimizer. Developed Flask App for the accesing the model efficently. </p>
+                                    </header>
+                                    <footer project>
+                                        <!-- <span project>Education & Language Learning</span> -->
+                                        <li projSkills>
+                                            <img src="/assets/python.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Python</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/ml.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Machine Learning</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Flask</span>
+                                        </li>
+                                        <!-- <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li> -->
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a proj>MakerSpace Cloud: Lab Inventory System</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/RedFibre/equipment" target="_blank" title="none" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>An Web-based lab inventory system. Crafted HTML skeletons to facilitate frontend engineers in seamlessly integrating designs, resulting in a 30% improvement in interface aesthetics and user experience.</p>
+                                    </header>
+                                    <footer project>
+                                        <li projSkills>
+                                            <img src="/assets/python.svg" width="15" height="15" alt="Rust Logo" project>
+                                            <span project>Python</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Django</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/RedFibre/Fake-News-Detector/" target="_blank" proj>Fake News Detection: An Chrome Extension</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/RedFibre/Fake-News-Detector/" target="_blank" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>A Chrome extension designed to determine the authenticity of news, utilizing an SVM model for the backend infrastructure, with implementation led by me. </p>
+                                    </header>
+                                    <footer project>
+                                        <li projSkills>
+                                            <img src="/assets/python.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Python</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Flask & Javascript</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/Digit-Recognition-System" target="_blank" proj>Digit Recognition System</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/Digit-Recognition-System" target="_blank" title="none" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>A digit recognition system utilizing the MNIST dataset, developed with Keras for the backend infrastructure, with the implementation spearheaded by me.</p>
+                                    </header>
+                                    <footer project>
+                                    <li projSkills>
+                                            <img src="/assets/deep.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Deep Learning</span>
+                                    </li>
+                                    <li projSkills>
+                                        <img src="/assets/python.svg" width="15" height="15" alt="ML Logo" project>
+                                        <span project>Python</span>
+                                    </li>
+                                    <li projSkills>
+                                        <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                        <span project>Completed</span>
+                                    </li>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/Books-Recommender-System" target="_blank" proj>Book's Recommendation System</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/Books-Recommender-System" target="_blank" title="none" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>Built a web application that recommend books by taking user’s input. <br/>Utilized the Amazon Book’s Dataset and Applied Collaborative-based Filtering model for finding the similarities between books.</p>
+                                    </header>
+                                    <footer project>
+                                        <li projSkills>
+                                            <img src="/assets/python.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Python</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/ml.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Machine Learning</span>
+                                        </li>
+                                      <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Flask</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                        </ul>
+                        
+                    </section>
+                    <section main>
+                        <h2 proj>Solo Projects</h2>
+                        <p click>(Click GitHub Logo for Source Code)</p>
+                        <ul project>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/news-portal" target="_blank" title="View the project on old website" proj>News Portal: An World Wide News Portal</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/news-portal" target="_blank" title="none" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>I developed a dynamic news portal using NewsAPI for real-time news data integration, keeping users updated with the latest headlines. JavaScript and Axios handled API requests and responses efficiently.</p>
+                                    </header>
+                                    <footer project>
+                                        <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Web Dev</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/RealTimeChat" target="_blank" title="View the project on old website" proj>RealTimeChat: An webapp for seamlessly Chat</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/RealTimeChat" target="_blank" title="none" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>Implemented the development of the Real-Time Chat Web App, incorporating features like real-time messaging and a user-friendly interface, utilizing Node.js, Express.js, and Socket.IO for efficient bidirectional communication.
+                                        </p>
+                                    </header>
+                                    <footer project>
+                                    <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Web Dev</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/shopping-cart" target="_blank" title="View the project on old website" proj>Shopping Cart</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/shopping-cart" target="_blank" title="none" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>a web application for a shopping cart built using React.js. The project aims to provide a user-friendly and interactive shopping experience for online customers.</p>
+                                    </header>
+                                    <footer project>
+                                      <li projSkills>
+                                            <img src="/assets/react.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>React</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/JS-imageapi" target="_blank" title="View the project" proj>ImageViewers</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/JS-imageapi" target="_blank" title="git" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>ImageViewers is a simple web application that allows users to search for images using the Unsplash API. The application provides a user-friendly interface to search and display images based on user queries.</p>
+                                    </header>
+                                    <footer project>
+                                        <li projSkills>
+                                            <img src="/assets/webdev.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Web Development</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/Tomato-Disease-detection-TFLITE" target="_blank" title="View the project" proj>Tomato Disease Detection: An mobile app </a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/Tomato-Disease-detection-TFLITE" target="_blank" title="View Project" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>A android mobile application for real-time detection of tomato diseases, leveraging TensorFlow Lite, ENAS optimizer, and CNN, with algorithm analysis performed to determine the most effective one.</p>
+                                    </header>
+                                    <footer project>
+                                        <!-- <span project>Education & Language Learning</span> -->
+                                        <li projSkills>
+                                            <img src="/assets/python.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Python</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/deep.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Neural Networks</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/android.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Mobile App</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+                            <li project>
+                                <article project>
+                                    <header project>
+                                        <h3 project>
+                                            <a href="https://github.com/DevanshUpadhyay26/food_recommender_app" target="_blank" title="View the project" proj>Food Recommendation</a>
+                                            <span project>•</span>
+                                            <a class="github-code-link" href="https://github.com/DevanshUpadhyay26/food_recommender_app" target="_blank" title="none" project>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <title>GitHub</title>
+                                                    <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+                                                </svg>
+                                            </a>
+                                        </h3>
+                                        <p project>A Flutter mobile app UI designed to showcase various food categories and provide recommendations. </p>
+                                    </header>
+                                    <footer project>
+                                        <li projSkills>
+                                            <img src="/assets/flutter.svg" width="15" height="15" alt="Rust Logo" project>
+                                            <span project>Flutter</span>
+                                        </li>
+                                        <li projSkills>
+                                            <img src="/assets/check.svg" width="15" height="15" alt="ML Logo" project>
+                                            <span project>Completed</span>
+                                        </li>
+                                    </footer>
+                                </article>
+                            </li>
+
+                        </ul>
+                        
+                    </section>
+                    <section main>
+                        <h2 main>Skills</h2>
+                        <ul foot>
+                            <ul foot>
+                                <h3>Programming Languages</h3>
+                                <li skills>
+                                    <img src="/assets/python.svg" width="16" height="16" alt="Python Logo">
+                                    <span skills>Python</span>
+                                </li> 
+                                <li skills>
+                                    <img src="/assets/c++.svg" width="16" height="16" alt="C++ Logo">
+                                    <span skills>C/C++</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/rust.svg" width="16" height="16" alt="Rust Logo">
+                                    <span skills>Rust</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/javascript.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Javascript</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/java.svg" width="16" height="16" alt="Rust Logo">
+                                    <span skills>Java</span>
+                                </li>
+                            </ul>
+                            <ul foot>
+                                <h3>AI/ML</h3>
+                                <li skills>
+                                    <img src="/assets/ml.svg" width="16" height="16" alt="DL Logo">
+                                    <span skills>Data Preprocessing and Augmentation</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/pytorch.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>PyTorch</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/deep.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Llama2b</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/ml.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Keras</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/tensorflow.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Tensorflow</span>
+                                </li>
+                            </ul>
+                            <ul foot>
+                                <h3>Web Development</h3>
+                                <li skills>
+                                    <img src="/assets/html.svg" width="16" height="16" alt="DL Logo">
+                                    <span skills>HTML/CSS</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/nodejs.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>NodeJs</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/express.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>ExpressJS</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/react.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>React</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/django.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Django/Flask</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/webdev.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>RestAPI</span>
+                                </li>
+                            </ul>
+                            <ul foot>
+                                <h3>Mobile App Developement</h3>
+                                <li skills>
+                                    <img src="/assets/android.svg" width="16" height="16" alt="DL Logo">
+                                    <span skills>Android</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/flutter.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Flutter</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/python.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Kivy</span>
+                                </li>
+                            </ul>
+                            <ul foot>
+                                <h3>Databases (SQL, NoSQL)</h3>
+                                <li skills>
+                                    <img src="/assets/mysql.svg" width="16" height="16" alt="DL Logo">
+                                    <span skills>MySQL</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/mongodb.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>MongoDB</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/sqlite.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>SQLite</span>
+                                </li>
+                            </ul>
+                            <ul foot>
+                                <h3>Tools and Technologies</h3>
+                                <li skills>
+                                    <img src="/assets/github.svg" width="16" height="16" alt="DL Logo">
+                                    <span skills>Git & GitHub</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/vsc.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>VSCode</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/jupyter.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Jupyter Notebook</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/android.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Android Studio</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/postman.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Postman</span>
+                                </li>
+                                <li skills>
+                                    <img src="/assets/linux.svg" width="16" height="16" alt="ML Logo">
+                                    <span skills>Linux (Ubuntu)</span>
+                                </li>
+                            </ul>
+                                                       
+                            <!-- <li skills>
+                                <svg width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+                                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+                                </svg>
+                                <span skills>HTML</span>
+                            </li> -->
+                        </ul>
+                    </section>
+                </section>
+                <section id="categories" style="display:none;">
+                    <section main>
+                        <h2 main>Classes</h2>
+                        <p class>Heres a list of courses I have taken, that I think are most valuable for my professional and research career.</p>
+                        <article class>
+                            <div class="content">
+                                <header class>
+                                    <h3 class>
+                                        <a href="http://catalog.illinois.edu/courses-of-instruction/math/" target="_blank" title="View the project on old website" proj>Math</a>
+                                    </h3>
+                                    <p class>Calculus I</p>
+                                    <p class>Calculus II</p>
+                                    <p class>Calculus III</p>
+                                    <p class>AP Calculus AB</p>
+                                    <p class>AP Calculus BC</p>
+                                    <p class>AP Statistics</p>
+                                </header>
+                                <header class>
+                                    <h3 class>
+                                        <a href="http://catalog.illinois.edu/courses-of-instruction/phys/" target="_blank" title="View the project on old website" proj>Physics</a>
+                                    </h3>
+                                    <p class>Physics 211: Mechanics</p>
+                                    <p class>Physics 212: Electricity & Magnetism</p>
+                                    <p class>AP Physics C: Mechanics</p>
+                                </header>   
+                            </div>
+                            <div class="content">
+                                <header class>
+                                    <h3 class>
+                                        <a href="http://catalog.illinois.edu/courses-of-instruction/cs/" target="_blank" title="View the project on old website" proj>Computer Science</a>
+                                    </h3>
+                                    <p class>CS 124: Introduction to Computer Science I</p>
+                                    <p class>(Kotlin)</p>
+                                    <p class>CS 128: Introduction to Computer Science II</p>
+                                    <p class>(C++)</p>
+                                    <p class>CS: 173: Discrete Mathematics</p>
+                                </header>
+                                <header class>
+                                    <h3 class>
+                                        <a href="http://catalog.illinois.edu/courses-of-instruction/chem/" target="_blank" title="View the project on old website" proj>Chemistry</a>
+                                    </h3>
+                                    <p class>CHEM 102: General Chemistry I</p>
+                                </header>
+                            </div>
+                        </article>
+                        <footer class>
+                            <span class>M.S. GPA: 4.0</span>
+                            <span class>B.S. GPA: 3.8</span>
+                        </footer>
+                    </section>
+                    <section main>
+                        <h2 main>Research</h2>
+                        <p>Current research I am doing.</p>
+                    </section>
+                    <section main>
+                        <h2 main>Random</h2>
+                        <p>Idk what to put here yet.</p>
+                    </section>
+                </section>
+                <section id="bookshelf" style="display:none;">
+                    <div id="bookshelf-container"></div>
+                    <script>
+                        fetch('/external/books.html')
+                            .then(response => response.text())
+                            .then(html => {
+                                document.getElementById('bookshelf-container').innerHTML = html;
+                            })
+                            .catch(error => console.error('Failed to load bookshelf:', error));
+                    </script>
+                </section>
+                <section id="transcripts" main>
+
+                    <a href="/assets/PDF/Aidan Andrews Unofficial Transcript.pdf" target="_blank" class="pdfLink mobile-only" work>View Unofficial</a>
+                    <a href="/assets/PDF/Aidan Andrews Official Transcript.pdf" target="_blank" class="pdfLink mobile-only" work>View Official</a>
+                    <nav blog>
+                        <button id="unofficialTranscriptLink" class="desktop-only" onclick="changeTranscript('unofficial')">Unofficial</button>
+                        <button id="officialTranscriptLink" class="desktop-only" onclick="changeTranscript('official')">Official</button>
+                    </nav>
+                    <iframe id="transcriptFrame" class="desktop-only" src="/assets/PDF/Aidan Andrews Unofficial Transcript.pdf" width="100%" height="1000"></iframe>
+                </section>
+                <section id="cover-letter" main>
+                    <a href="/assets/PDF/Cover_Letter.pdf" target="_blank" class="pdfLink mobile-only" work>View Cover Letter</a>
+                    <iframe class="desktop-only" src="/assets/PDF/Cover_Letter.pdf" width="100%" height="1000"></iframe>
+                </section>
+                <section id="resume" main>
+                    <a href="/assets/PDF/Devansh Upadhyay Resume.pdf" target="_blank" class="pdfLink mobile-only" work>View Resume</a>
+                    <iframe class="desktop-only" src="/assets/PDF/Devansh Upadhyay Resume.pdf" width="100%" height="1000"></iframe>
+                </section>
+                <section id="blog" style="display:block;">
+                    <section main>
+                        <h2 main>Blogs</h2>
+                        <nav blog>
+                            <button onclick="filterPosts('all')">All</button>
+                            <button onclick="filterPosts('misc')">Misc</button>
+                            <button onclick="filterPosts('neur')">Bio</button>
+                            <button onclick="filterPosts('mlcs')">ML</button>
+                            <button onclick="filterPosts('phys')">Physics</button>
+                        </nav>
+                        <div id="postsContainer">
+                            <!-- Misc posts here -->
+                            <div id="misc040424">
+                                <article blog="post">
+                                    <a href="javascript:void(0);" onclick="loadPost('misc040424')" blog>
+                                        Research Based Paper For RHET 105
+                                    </a>
+                                    <div class="date">Written on 04 April 2024</div>
+                                    <div class="entry">
+                                        <p>I would have never thought that I would take pride in a paper written for a general education requirement class...</p>
+                                    </div>
+                                    
+                                    <a href="javascript:void(0);" onclick="loadPost('misc040424')" read>read more</a>
+                                </article>
+                            </div>                                
+                            <!-- Neuroscience posts here -->
+                            <div id="neur013105">
+                                <article blog="post">
+                                    <a href="javascript:void(0);" onclick="loadPost('template')" blog>
+                                        My next blog post...
+                                    </a>
+                                    <div class="date">Written on 13 April 2024</div>
+                                    <div class="entry">
+                                        <p>my next blog post will go here</p>
+                                    </div>
+                                    <a href="javascript:void(0);" onclick="loadPost('template')" read>read more</a>
+                                </article>
+                            </div>
+                            <!-- ML posts here -->
+                            <div id="mlcs012905">
+                                <article blog="post">
+                                    <a href="javascript:void(0);" onclick="loadPost('template')" blog>
+                                        My next blog post...
+                                    </a>
+                                    <div class="date">Written on 13 April 2024</div>
+                                    <div class="entry">
+                                        <p>my next blog post will go here</p>
+                                    </div>
+                                    <a href="javascript:void(0);" onclick="loadPost('template')" read>read more</a>
+                                </article>
+                            </div>
+                            <!-- Physics posts here -->
+                            <div id="phys041424">
+                                <article blog="post">
+                                    <a href="javascript:void(0);" onclick="loadPost('phys140424')" blog>
+                                        What happened to the study of physics?
+                                    </a>
+                                    <div class="date">Written on 14 April 2024</div>
+                                    <div class="entry">
+                                        <p>I am writing about not only the decline of physics but the decline in overall quality and quantity of research. It seems like no undergraduate students are interested in pursuing graduate degrees.</p>
+                                    </div>
+                                    <a href="javascript:void(0);" onclick="loadPost('phys140424')" read>read more</a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </section>                
+                <!-- Blog Categories -->
+                <!-- Individual Blog Posts Displayed Here -->
+                <!-- <section id="blogPost" style="display: none;" main>
+                    <button onclick="backToBlog()" main>Back to Blog</button>
+                    <div id="postContent"></div>
+                </section> -->
+                <!-- <section id="report" style="display:none;">
+                    <section main>
+                        <div id="report-container"></div>
+                        <script>
+                            fetch('/external/report.html')
+                                .then(response => response.text())
+                                .then(html => {
+                                    document.getElementById('report-container').innerHTML = html;
+                                })
+                                .catch(error => console.error('Failed to load report:', error));
+                        </script>
+                    </section>
+                </section> -->
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Database and Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              
+        </main>
+        <!-- <footer footer>
+            <h1 footer>If you encounter any issues or bugs please report them <a href="javascript:void(0);" onclick="showSection('report')" footer>here</a></h1>
+        </footer> -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <h2 main>Contact Me</h2>
+                <p>Phone: +91 98921 13856</p>
+                <p>Email: <a href="mailto:devanshupadhyay26@gmail.com" target="_blank">devanshupadhyay26@gmail.com</a></p>
+                <p>LinkedIn: <a href="www.linkedin.com/in/devansh-upadhyay" target="_blank">Devansh Upadhyay</a></p>
             </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Makerspace Cloud- Lab Inventory Management"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Makerspace Cloud- Lab Inventory Management System</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://github.com/RedFibre/equipment">Github</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Fake News Detection using Machine Learning</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://github.com/RedFibre/Fake-News-Detector">Github</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">RealTimeChat - a WebApp for seamlessly chat</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://github.com/DevanshUpadhyay26/RealTimeChat">Github</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-4.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">NewsPortal - a WebApp for every type of news</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://github.com/DevanshUpadhyay26/news-portal">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Blogs</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/CT.png"
-                alt="CT img"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Computational Thinking</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://devanshupadhyay01.medium.com/computational-thinking-the-first-step-of-problem-solving-4fbe082528ee">Link</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/RT.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Implementing Real-Time Communication in Full Stack Applications</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://devanshupadhyay01.medium.com/implementing-real-time-communication-in-full-stack-applications-8af79fbc6ad4">Link</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/FS.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">A Comprehensive Guide to Full Stack Development: Java, Python, & JS</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://devanshupadhyay01.medium.com/a-comprehensive-guide-to-full-stack-development-java-python-and-javascript-657225e3eba">Link</a>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ML.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">What is Machine Learning and Why is it Important?</h2>
-            <div class="btn-container">
-              <a class="btn btn-color-2 project-btn" href="https://devanshupadhyay01.medium.com/what-is-machine-learning-and-why-is-it-important-dfcb8fbdef97">Link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:devanshupadhyay26@gmail.com">devanshupadhyay26@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/devansh-upadhyay/">LinkedIn</a></p>
-        </div>
-        
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#projects">Blogs</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Made with ❤️</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        </footer>       
+    </body>
 </html>
