@@ -68,7 +68,7 @@ p {
 
 @media print {
     .no-print {
-        display: none!important
+        display: none!important;
     }
 
     .print {
@@ -330,10 +330,16 @@ footer[header] {
     color: #555;
     font-size: small;
     display: flex;
-    gap: 4px;
-    margin-top: 8px
+    gap: 6px;
+    margin-top: 8px;
+    
 }
-
+@media (width <= 700px) {
+    footer[header]{
+        margin-left: 130px;
+    }
+    
+}
 footer[header] a[header] {
     color: #777;
     display: inline-flex;
